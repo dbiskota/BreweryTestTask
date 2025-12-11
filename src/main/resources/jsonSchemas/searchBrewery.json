@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "description": "GET breweries/search",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the brewery"
+      },
+      "name": {
+        "type": "string",
+        "description": "Brewery name"
+      },
+      "brewery_type": {
+        "type": "string",
+        "description": "Type of brewery"
+      },
+      "address_1": {
+        "type": ["string", "null"],
+        "description": "Primary street address"
+      },
+      "address_2": {
+        "type": ["string", "null"],
+        "description": "Secondary address line"
+      },
+      "address_3": {
+        "type": ["string", "null"],
+        "description": "Third address line"
+      },
+      "city": {
+        "type": "string",
+        "description": "City name"
+      },
+      "state_province": {
+        "type": "string",
+        "description": "State or province"
+      },
+      "postal_code": {
+        "type": "string",
+        "description": "Postal or ZIP code"
+      },
+      "country": {
+        "type": "string",
+        "description": "Country name"
+      },
+      "longitude": {
+        "type": ["number", "null"],
+        "description": "Longitude coordinate"
+      },
+      "latitude": {
+        "type": ["number", "null"],
+        "description": "Latitude coordinate"
+      },
+      "phone": {
+        "type": ["string", "null"],
+        "description": "Contact phone number"
+      },
+      "website_url": {
+        "type": ["string", "null"],
+        "description": "Brewery website URL"
+      },
+      "state": {
+        "type": "string",
+        "description": "State abbreviation or name (deprecated)"
+      },
+      "street": {
+        "type": ["string", "null"],
+        "description": "Street address (deprecated)"
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "brewery_type",
+      "city",
+      "state_province",
+      "postal_code",
+      "country",
+      "state"
+    ]
+  }
+}
